@@ -30,7 +30,7 @@ public class 신규아이디추천 {
 		recommend_id = recommend_id.replaceAll("^[.]|[.]$", "");
 		
 //		5단계 new_id가 빈 문자열이라면, new_id에 "a"를 대입합니다.
-		if (recommend_id == "")	recommend_id = "a";
+		if (recommend_id.equals(""))	recommend_id = "a";
 		
 //		6단계 new_id의 길이가 16자 이상이면, new_id의 첫 15개의 문자를 제외한 나머지 문자들을 모두 제거합니다. 만약 제거 후 마침표(.)가 new_id의 끝에 위치한다면 끝에 위치한 마침표(.) 문자를 제거합니다.
 		if (recommend_id.length() > 15) {
